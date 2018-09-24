@@ -1,0 +1,68 @@
+This is a help document for my console.
+It's still young and can't do something really awesome, but I'm still proud of it.
+Hope it'll be helpful for you.
+
+List of commands and their annotation:
+
+- exit
+Usage
+exit
+There's not so much to tell bout this command. Exit from console.
+
+- copy
+Usage
+copy [name] [path_to] [-r; --anyway]
+Copying file from this directory to 2nd argument's full path. If directory - need "-r" argument. If target location is already exists, you can use --anyway to delete it and copy file without problems.
+
+- move
+Usage
+move [name] [path_to] [-r; --anyway]
+Moving file or directory (with -r param) to path_to. If path_to exists it'll tell bout it and close (if you didn't use --anyway option)
+
+- rename
+Usage
+rename [file_name] [file_new_name]
+Renames file or directory to new name. That's all.
+
+- make
+Usage
+make [-d; -f; -l; -sl] [name] [file, --anyway]
+Make directory (-d)/file (-f)/link (-l)/symlink (-sl). For -l and -sl needs 3dr argument that points us a path to link. --anyway same to copy command.
+
+- goto
+Usage
+goto [path]
+Changes directory to where path points us.
+
+- delete
+Usage
+delete [name]
+Delete something by the name
+
+- list
+Usage
+list [path]
+Get list of files in directory by path (if path is empty - in current)
+
+- open
+Usage
+open [name]
+Shows you content of text file. If name refers to folder, it goes like goto command.
+
+- help
+Usage
+help
+Shows you this file.
+
+- zip
+Usage
+zip [name]
+Zip current folder to .zip archive. With name argument you can choose a name for an archive. Archive saves in folder one level higher (except root directories).
+
+- unzip
+Usage
+unzip [path to zip] [name of folder to unzip]
+Unzip archive from path (full path or just a name of archive in current folder) to folder from 2nd argument or to folder named like archive in current folder.
+
+
+That's all for now!
